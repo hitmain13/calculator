@@ -1,0 +1,67 @@
+header {
+    font-family: 'Alumni Sans', sans-serif;
+}
+p {
+    font-size: 20px;
+    user-select: none;
+    cursor: default;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+p.numberOneHist {
+    margin-left: auto;
+    padding-left: 90px;
+}
+fieldset {
+    background-color:gainsboro;
+    width: 0px;
+    margin: auto;
+}
+input#displayBox {
+    pointer-events: none;
+    user-select: none;
+    border-radius: 5px; border-style:solid;
+    cursor: default;
+    margin: 8px 0.5px;
+    font-size: 20px;
+    width: 192.5px;
+    padding-left: 3px;
+    text-align: right;
+}
+.line {
+    width: 205px;
+    margin: auto;
+}
+.newLine {
+    float: left;
+}
+.column {
+    width: 50px;
+    margin-left: 1px;
+}
+.column1 {
+    width: 145px;
+    margin: auto;
+}  
+p.column1 {
+    font-size: 18px;
+    padding: 0px;
+    color: gray;
+    width: 200px;
+    text-align: right;
+    text-align: end, dir=left;
+}
+.button {
+    cursor: pointer;
+    width: 47.5px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 1.5px;
+}
+.calculate {
+    padding: 35px 0;
+}
+.zero {
+    width: 98px;
+}

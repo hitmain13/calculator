@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora - FMATSU</title>
+        <link rel="stylesheet" href="calculadora.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@200;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="calculadora.js"></script>
+        <fieldset style="border-radius: 5px; padding: 5px; min-height:150px">
+            <div class="line">
+                <header>
+                    <div class="column">
+                        <p>Calculadora topzona - FMatsu</p>
+                        <p class='numberOneHist column1 newLine' id='numberOneHist'>0</p>
+                        <input type="text" id="numberOne" hidden readonly value='0'/> <!-- input para guardar o primeiro número do cálculo-->
+                        <input type="text" id="operator" hidden readonly value='0'/> <!-- input para guardar qual operador está utilizando-->
+                        <input type="text" id="numberTwo" hidden readonly value='0'/> <!-- input para guardar o segundo número-->
+                        <input type='text' id='displayBox' readonly value='0' />
+                    </div>
+                </header>
+                <section>
+                    <div class="column newLine">
+                        <button onclick = 'addOperator(this)' id = 'divide' class = 'button'>/</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n7' class = 'button'>7</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n4' class = 'button'>4</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n1' class = 'button'>1</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n0' class = 'button zero'>0</button>
+                    </div> 
+                    <div class="column newLine">
+                        <button onclick = 'addOperator(this)' id = 'multiple' class = 'button'>*</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n8' class = 'button'>8</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n5' class = 'button'>5</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n2' class = 'button'>2</button>
+                    </div>
+                    <div class="column newLine">
+                        <button onclick = 'addOperator(this)' id = 'sub' class = 'button'>-</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n9' class = 'button'>9</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n6' class = 'button'>6</button>
+                        <button onclick = 'writeNumberOnDisplay(this)' id = 'n3' class = 'button'>3</button>
+                        <button onclick = 'addDecimal(this, true)' id = 'dec' class = 'button'>.</button>
+                    </div>
+                    <div class="column newLine">
+                        <button onclick = 'addOperator(this)' id = 'add' class = 'button'>+</button>
+                        <button onclick = 'backSpace()' id = 'backSpace' class = 'button'>←</button>
+                        <button onclick = 'eraseAll()' id = 'eraseAll' class = 'button'>C</button>
+                        <button onclick = 'calculate()' id = 'calculate' class = 'button calculate'><b>=</b></button>
+                    </div>
+            </section>
+            </div>
+        </fieldset>
+        <script src="calculadora.js">
+        </script>
+    </body>
+</html>

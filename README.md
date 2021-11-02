@@ -1,5 +1,5 @@
 ### Calculator
-A calculator built using HTML, CSS and JS
+A calculator built using HTML, CSS and JS (DOM).
 
 ### Access
 
